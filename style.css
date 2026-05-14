@@ -149,8 +149,12 @@ img {
 
 .box {
   display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  gap: 40px;
+  background-color: #78ACFF;
+  padding: 30px;
+  border: 1px solid #34373A;
+  border-radius: 16px;
   align-items: start;
 }
 
@@ -158,18 +162,29 @@ img {
   padding: 1rem;
   background-color: #ffffff;
   border: 1px solid #34373A;
+  width: 230px;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.topic:hover {
+  transform: scale(1.05);
+}
+
+.topic:active {
+  transform: scale(0.95);
 }
 
 .topic img {
-  max-width: 80px;
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   margin-bottom: 0.75rem;
   padding: 0;
 }
@@ -178,4 +193,36 @@ img {
   .box {
     grid-template-columns: 1fr;
   }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #78ACFF;
+  color: #ffffff;
+  border-top: 1px solid #4a4d53;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer .social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .social-media a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer .social-media a:hover {
+  text-decoration: underline;
 }
