@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sec.css">
+    <title>Veebilehe nimi JavaScript</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Logo</div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Meie veebileht</a>
+            <a class="nav-link" href="mata.html">Õppe materjalid</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Otsi...">
+            <button>Otsi</button>
+        </div>
+    </nav>
+
+    <header>
+
+        <section>
+            <a class="back" href="index.html">
+                <button >← Tagasi</button>
+            </a>
+        </section>  
+
+        <section>
+            <div class="welcome">
+                <div class="image-card">
+                    <img src="img/jc.png" alt="JavaScript">
+                    <div class="image-card-text"> JavaScript if, else if, else</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Mis on JavaScript if, else if, else</h1>
+            <div class="content">
+                <img src="img/else.png" alt="Sisu">
+                <div class="content1">
+                    <p>Pildi järgi on antud tavaline Javascripti if, else if, else kood mis näitab, milline näeb välja
+                        tavaline if, else if, else kood. See on väga kasulik, kui me tahame, et meie kood annaks
+                        eraldi vastuse olenevalt väärtusest.
+                    <p>Kuidas see töötab? kõige pealt, me teeme väärtuse kasutades <strong>const</strong>. Siis me paneme väärtusele nime.
+                    Pildil on pandud nimeks <strong>"hour"</strong> ja see on võrdne <strong>new Date().getHours();</strong>. See tähendab,
+                    et see võtab oma väärtuse praegusest kella ajast <strong>(0-23)</strong>.</p>
+                    <p><strong>If</strong>, ehk kui <strong>"hour"</strong> on väiksem kui 12,
+                    siis kuvatakse sõnum <strong>"Good morning!"</strong>. <strong>Else if</strong>, ehk kui "hour" on suurem või võrdne 12,
+                    siis kuvatakse sõnum <strong>"Good afternoon!"</strong>. <strong>Else</strong>, ehk kui <strong>"hour"</strong> on suurem või võrdne 18,
+                    siis kuvatakse sõnum <strong>"Good evening!"</strong>. Else if saab lisada nii palju juurde, kui soovib.</p>
+                  </div>
+              </div>
+          </section>
+      </header>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+        </div>
+    </footer>
+
+</body>
+</html>  
