@@ -87,6 +87,7 @@ header {
 .back button:hover {
   background-color: #377efa;
 }
+
 .welcome {
   text-align: center;
   padding: 2rem 1.5rem;
@@ -95,9 +96,10 @@ header {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 10rem;
   margin-top: 5rem;
+  border: 1px solid #34373a;
 }
 
-img {
+ img {
   max-width: 800px;
   max-height: 400px;
   width: auto;
@@ -106,6 +108,15 @@ img {
   padding: 40px;
 }
 
+ .welcome img {
+  max-width: 800px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid #34373a;
+}
 
 .image-card {
   position: relative;
@@ -199,7 +210,6 @@ img {
   border-radius: 16px;
   align-items: start;
 }
-
 
 .footer {
   padding: 2rem 2rem;
