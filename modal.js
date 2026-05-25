@@ -3,31 +3,35 @@ const form = document.querySelector("form");
 const modal = document.getElementById("thankModal");
 
 const closeBtn = document.getElementById("closeThank");
-
 const closeThankBtn = document.getElementById("closeThankBtn");
 
-/* Form submit */
+/* Inputid */
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+/* Ava modal */
 form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    modal.style.display = "flex";
+    modal.classList.add("show");
+
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
 });
 
-/* X nupp */
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-};
+/* Sulge funktsioon */
+function closeModal() {
+    modal.classList.remove("show");
+}
 
-/* Sulge nupp */
-closeThankBtn.onclick = function() {
-    modal.style.display = "none";
-};
+closeBtn.onclick = closeModal;
+closeThankBtn.onclick = closeModal;
 
-/* Klikk taustale */
 window.onclick = function(event) {
-
-    if(event.target === modal) {
-        modal.style.display = "none";
+    if (event.target === modal) {
+        closeModal();
     }
 };
