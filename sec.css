@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(135deg, #78acff, #377EFA);
+    background: linear-gradient(135deg, #78acff, #377EFA);
     background-size: 400% 400%;
     animation: ICE 18s ease infinite;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -15,11 +15,36 @@ body {
     align-items: center;
     padding: 1.2rem 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.navbar img {
+    height: 150px;
+    width: auto;
+    flex-shrink: 0;
+    margin-top: 15px;
+
+    animation: floatLogo 3s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+
+    transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.navbar button:active {
+  transform: scale(0.97);
+    transition: transform 0.1s ease;
 }
 
 .navbar::before,
 .navbar::after {
+  z-index: 0;
     content: '';
     position: absolute;
     width: 100px;
