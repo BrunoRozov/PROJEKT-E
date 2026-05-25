@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <title>Veebilehe nimi</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Logo</div>
+        <div class="nav-links">
+            <a class="nav-link" href="#">Meie veebileht</a>
+            <a class="nav-link" href="#">Õppe materjalid</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Otsi...">
+            <button>Otsi</button>
+        </div>
+    </nav>
+
+    <header>
+            <section>
+                <div class="container">
+                    <h1>Võta <span class="text-primary">Ühendust</span> Meiega</h1>
+                    <p>Palun täida all olev vorm</p>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Nimi</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Sõnum</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Saada</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <section>
+                <div id="thankModal" class="modal">
+
+                    <div class="modal-content thank-content">
+
+                        <span class="close" id="closeThank">&times;</span>
+
+                        <h2>Aitäh!</h2>
+                        <p>Sinu tagasiside on vastu võetud.</p>
+
+                        <div class="saada">
+                            <button id="closeThankBtn">Sulge</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <script src="modal.js"></script>
+    </header>
+</body>
