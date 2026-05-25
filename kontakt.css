@@ -116,7 +116,7 @@ body {
   transform: scale(0.97);
 }
 
-header {
+main {
   text-align: start;
   padding: 90px 50px;
 }
@@ -208,7 +208,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background: rgba(0,0,0,0.5); /* SEE on overlay */
+    background: rgba(0,0,0,0.5);
 
     opacity: 0;
     visibility: hidden;
@@ -221,9 +221,9 @@ header {
     visibility: visible;
 }
 
-/* sisu kast */
+
 .modal-content {
-    background: white;   /* SEE peab olema siin */
+    background: white;
     padding: 3rem;
     border-radius: 12px;
     text-align: center;
@@ -271,4 +271,48 @@ header {
 
 .saada button:active {
   transform: scale(0.97);
+}
+
+.footer {
+    position: relative;
+    padding: 2rem 2rem;
+    text-align: center;
+    margin-top: 76px;
+
+    background: linear-gradient(135deg, #78acff, #377EFA);
+    background-size: 400% 400%;
+    animation: ICE 18s ease infinite;
+
+    overflow: hidden;
+}
+
+/* RINGID */
+.footer::before,
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 16px solid rgba(255,255,255,0.12);
+
+    width: 120px;
+    height: 120px;
+
+    animation: wave 30s linear infinite;
+}
+
+.footer::after {
+    width: 260px;
+    height: 260px;
+    border: 10px solid rgba(255,255,255,0.08);
+    animation-direction: reverse;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: white;
 }
