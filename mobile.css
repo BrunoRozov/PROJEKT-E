@@ -28,6 +28,46 @@
     
   }
 
+  /* RINGID */
+  .navbar::before,
+  .navbar::after {
+    content: '';
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.12);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    animation: wave 25s linear infinite;
+
+    opacity: 0.4;
+
+    z-index: 0;
+
+    /* TÄHTIS */
+    pointer-events: none;
+  }
+
+  .navbar::after {
+    width: 220px;
+    height: 220px;
+
+    border: 6px solid rgba(255, 255, 255, 0.08);
+
+    animation-duration: 32s;
+    animation-direction: reverse;
+
+    opacity: 0.25;
+  }
+
   .navbar img {
     height: 100px;
     margin-top: 0;
@@ -76,12 +116,7 @@
   }
 
   /* WELCOME */
-  .welcome {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    padding: 2rem 2rem;
-  }
-
+ 
   .welcome h1 {
     font-size: 2rem;
   }
@@ -148,7 +183,7 @@
   }
 
   /* RINGID */
-  .welcome::before,
+  .box::before,
   .box::after {
     content: '';
 
@@ -261,4 +296,27 @@
   .footer p {
     font-size: 0.85rem;
   }
+
+ .image-card-text {
+   position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0)
+    );
+  }
+
 }
