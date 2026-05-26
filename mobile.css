@@ -1,0 +1,264 @@
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+
+    }
+
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  .navbar img {
+    height: 100px;
+    margin-top: 0;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  /* SEARCH */
+  .search {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .search input {
+    width: 50%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .search button {
+    width: 50%;
+  }
+
+  /* HEADER */
+  header {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* WELCOME */
+  .welcome {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem 2rem;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+  }
+
+  .welcome button {
+    width: 100%;
+  }
+
+  .welcome {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 1rem;
+  }
+
+  /* RINGID */
+  .welcome::before,
+  .welcome::after {
+    content: '';
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.12);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    animation: wave 25s linear infinite;
+
+    opacity: 0.4;
+
+    z-index: 0;
+
+    /* TÄHTIS */
+    pointer-events: none;
+  }
+
+  .welcome::after {
+    width: 220px;
+    height: 220px;
+
+    border: 6px solid rgba(255, 255, 255, 0.08);
+
+    animation-duration: 32s;
+    animation-direction: reverse;
+
+    opacity: 0.25;
+  }
+/* AAAAAAAAAAAAAAAA */
+  
+.box {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 1rem;
+  }
+
+  /* RINGID */
+  .welcome::before,
+  .box::after {
+    content: '';
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.12);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    animation: wave 25s linear infinite;
+
+    opacity: 0.4;
+
+    z-index: 0;
+
+    /* TÄHTIS */
+    pointer-events: none;
+  }
+
+  .box::after {
+    width: 220px;
+    height: 220px;
+
+    border: 6px solid rgba(255, 255, 255, 0.08);
+
+    animation-duration: 32s;
+    animation-direction: reverse;
+
+    opacity: 0.25;
+  }
+
+  /* SISU RINGIDEST ETTEPOOLE */
+  .box * {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* NUPP KINDLASTI ETTEPOOLE */
+  .box button {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* AAAAAAAAAAAA */
+  .welcome * {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* NUPP KINDLASTI ETTEPOOLE */
+  .welcome button {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* CONTENT */
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .content img {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .content1 {
+    width: 100%;
+  }
+
+  /* ÕPE */
+  .õpe h1 {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  /* BOX GRID */
+  .box {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .topic {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .topic img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 1.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+}
