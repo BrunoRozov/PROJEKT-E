@@ -52,6 +52,7 @@ body {
     width: auto;
     flex-shrink: 0;
     margin-top: 15px;
+    padding: 0;
 
     animation: floatLogo 3s ease-in-out infinite;
     position: relative;
@@ -236,6 +237,17 @@ main {
 
 .container button:active {
   transform: scale(0.97);
+}
+
+@keyframes ICE {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes wave {
+    from { transform: rotate(0deg) translate(0, 0); }
+    to   { transform: rotate(360deg) translate(30px, 40px); }
 }
 
 .modal {
