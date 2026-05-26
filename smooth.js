@@ -1,4 +1,5 @@
-const learnBtn = document.getElementById("learnBtn");
+const learnBtn  = document.getElementById("learnBtn");
+const learnA  = document.getElementById("learnA");
 
 learnBtn.onclick = () => {
 
@@ -7,3 +8,11 @@ learnBtn.onclick = () => {
             behavior: "smooth"
         });
 };
+
+learnA.onclick = () => {
+
+    document.getElementById("learning-topics")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+}
