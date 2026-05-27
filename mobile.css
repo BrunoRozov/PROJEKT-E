@@ -319,4 +319,11 @@
     );
   }
 
+  .form-group input,
+  .form-group textarea{
+    width: 70%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
 }
