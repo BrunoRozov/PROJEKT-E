@@ -165,7 +165,7 @@ header {
 
 .search button:active {
   transform: scale(0.97);
-  }
+}
   
 .welcome {
   text-align: center;
