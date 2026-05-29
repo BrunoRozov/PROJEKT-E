@@ -486,6 +486,12 @@ img {
   text-align: center;
 }
 
+.back {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
 .back button {
   padding: 0.75rem 1.5rem;
   background-color: #0000ff;
@@ -497,7 +503,6 @@ img {
   background: linear-gradient(135deg, #0066ff, #00aaff);
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
-  text-align: end;
 }
 
 .back button:hover {
