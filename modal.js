@@ -1,37 +1,48 @@
+/* ========== MODAL FUNKTSIOON: KONTAKTVORMI KÄSITLEMINE ==========
+   See kood halludab kontaktvormi esitamist ja tänu-modali kuvamist.
+*/
+
+/* Kontaktvormi element */
 const form = document.querySelector("form");
 
+/* Tänusõnu modal dialoogi element */
 const modal = document.getElementById("thankModal");
 
+/* Nupud modali sulgemiseks */
 const closeBtn = document.getElementById("closeThank");
 const closeThankBtn = document.getElementById("closeThankBtn");
 
-/* Inputid */
+/* Vormi sisestuse väljad */
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 
-/* Ava modal */
-form.addEventListener("submit", function(event) {
+/* Vormi esitamise sündmus - kuvatakse tänumodal */
+form.addEventListener("submit", function (event) {
+  /* Keelame vaikevormi esitamise */
+  event.preventDefault();
 
-    event.preventDefault();
+  /* Näitame tänumodali */
+  modal.classList.add("show");
 
-    modal.classList.add("show");
-
-    nameInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
+  /* Tühjendame vormi väljad */
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
 });
 
-/* Sulge funktsioon */
+/* Modali sulgemise funktsioon */
 function closeModal() {
-    modal.classList.remove("show");
+  modal.classList.remove("show");
 }
 
+/* Sulemine nuppudest */
 closeBtn.onclick = closeModal;
 closeThankBtn.onclick = closeModal;
 
-window.onclick = function(event) {
-    if (event.target === modal) {
-        closeModal();
-    }
+/* Sulemine modali väljaspool klikkimisel */
+window.onclick = function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
 };

@@ -1,76 +1,27 @@
-﻿const learnBtn = document.getElementById("learnBtn");
+﻿/* ========== SUJUV KERIMINE: "ALUSTA ÕPPIMIST" NUPUST ==========
+   See kood suunab kasutaja klikkimisel õppeteemade sektsioonile.
+*/
+
+/* "Alusta Õppimist" nupp ja kontakti link */
+const learnBtn = document.getElementById("learnBtn");
 const learnA = document.getElementById("learnA");
 
+/* Sujuva kerimise funktsioon - liigub õppeteemade sektsioonile */
 const scrollToTopics = () => {
   const topicsSection = document.getElementById("learning-topics");
   if (topicsSection) {
     topicsSection.scrollIntoView({
-      behavior: "smooth",
+      behavior: "smooth" /* Sujuv kerimine (mitte hüppamine) */,
     });
   }
 };
 
+/* Nupule klikkimisel - sujuv kerimine */
 if (learnBtn) {
   learnBtn.onclick = scrollToTopics;
 }
 
+/* Kontakti lingile klikkimisel - samuti sujuv kerimine */
 if (learnA) {
   learnA.onclick = scrollToTopics;
-}
-
-const searchInput = document.querySelector(".search input");
-const searchButton = document.querySelector(".search button");
-
-const topicMap = {
-  matemaatika: "mata.html",
-  math: "mata.html",
-  javascript: "javascript.html",
-  js: "javascript.html",
-  python: "py.html",
-  py: "py.html",
-  html: "html.html",
-  css: "css.html",
-  sass: "sass.html",
-  bootstrap: "bootstrap.html",
-  kontakt: "kontakt.html",
-  koduleht: "index.html",
-};
-
-function handleSearch() {
-  if (!searchInput) return;
-
-  const query = searchInput.value.trim().toLowerCase();
-  if (!query) {
-    searchInput.focus();
-    return;
-  }
-
-  const page = topicMap[query];
-  if (page) {
-    window.location.href = page;
-    return;
-  }
-
-  const normalized = query.replace(/[^a-z0-9]/g, "");
-  const fuzzyPage = topicMap[normalized];
-  if (fuzzyPage) {
-    window.location.href = fuzzyPage;
-    return;
-  }
-
-  alert(
-    "Teemat ei leitud. Proovi kirjutada teemade nimesid nagu Matemaatika, JavaScript, Python, HTML, CSS, SASS või Bootstrap.",
-  );
-}
-
-if (searchButton) {
-  searchButton.addEventListener("click", handleSearch);
-}
-
-if (searchInput) {
-  searchInput.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-      handleSearch();
-    }
-  });
 }

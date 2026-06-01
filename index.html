@@ -1,3 +1,5 @@
+<!-- Koduleht - Devik Õppimisportaal -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" />
+    <!-- Mobiilse kuva stiil -->
     <title>Devik</title>
     <link rel="icon" type="#" href="/img/image.png" />
   </head>
   <body>
+    <!-- NAVIGATSIOON - Pealause menüü koos otsinguga -->
     <nav class="navbar">
-      <img src="img/logo.png" alt="" />
+      <img src="img/logo.png" alt="Logo" />
       <h2>Devik</h2>
       <div class="nav-links">
         <a id="learnA" class="nav-link" href="kontakt.html">Kontakt</a>
         <a class="nav-link" href="#learning-topics">Õppe materjalid</a>
       </div>
+      <!-- OTSINGUTOIMIK - Kasutaja saab teemade järgi otsida -->
       <div class="search">
         <input type="text" placeholder="Otsi..." list="topic-list" />
         <datalist id="topic-list">
@@ -32,15 +37,19 @@
       </div>
     </nav>
 
+    <!-- PEALKIRI SEKTSIOON -->
     <header>
+      <!-- Tervituse sektsioon -->
       <section>
         <div class="welcome">
           <h1>Tere tulemast Devik veebilehele!</h1>
           <h2>Õppimiseks ja teadmiste laiendamiseks valmis?</h2>
           <button id="learnBtn">Alusta õppimist</button>
+          <!-- Nupul klikk –> sujuv kerimine teemade juurde -->
         </div>
       </section>
 
+      <!-- Info sektsioon -->
       <section>
         <h1>Mis veebileht see on?</h1>
         <div class="content">
@@ -64,10 +73,12 @@
         </div>
       </section>
 
+      <!-- ÕPPE TEEMAD SEKTSIOON - Peamised õppematerjalid -->
       <section id="learning-topics">
         <div class="õpe">
           <h1>Meie õppimise teemad</h1>
           <div class="box">
+            <!-- Grid kuvapaigutus - 5 teemat ridades -->
             <a class="topic" href="mata.html">
               <img src="img/math.webp" alt="Matemaatika" />
               <span>Matemaatika</span>
@@ -108,5 +119,6 @@
     </footer>
 
     <script src="smooth.js"></script>
+    <script src="search.js"></script>
   </body>
 </html>

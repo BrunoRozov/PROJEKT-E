@@ -1,18 +1,22 @@
 /* Global styles for the project */
+
+/* Sujuv kerimine leheküljel */
 html {
   scroll-behavior: smooth;
 }
 
+/* Põhistiilid: teksti pere, tausta värv */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8f9fa;
 }
 
+/* Navigatsiooni riba - üleval olev menüü särtsu animatsiooniga */
 .navbar {
   background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
-  animation: ICE 18s ease infinite;
+  animation: ICE 18s ease infinite; /* Värvianimatsioon */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   color: white;
   display: flex;
@@ -26,17 +30,16 @@ body {
   z-index: 1;
 }
 
+/* Logo - ujub kerge animatsiooniga ja kasvab hiirega üle */
 .navbar img {
   height: 150px;
   width: auto;
   flex-shrink: 0;
   margin-top: 15px;
   padding: 0;
-
-  animation: floatLogo 3s ease-in-out infinite;
+  animation: floatLogo 3s ease-in-out infinite; /* Logo ujuv efekt */
   position: relative;
   z-index: 2;
-
   transition: transform 0.3s ease;
 }
 
@@ -106,11 +109,13 @@ body {
   transform: scale(0.97);
 }
 
+/* Otsingukast ja nupp */
 .search {
   display: flex;
   align-items: center;
 }
 
+/* Otsingusisestus väli */
 .search input {
   padding: 0.5rem;
   border: 1px solid #34373a;
@@ -118,6 +123,7 @@ body {
   margin-right: 0.5rem;
 }
 
+/* Otsingu nupp - sinikses gradiendiga ja hõõgusega */
 .search button {
   padding: 0.75rem 1.5rem;
   background-color: #0000ff;
@@ -151,12 +157,13 @@ header {
   padding: 90px 50px;
 }
 
+/* Tervituse kast avaleheküljel - sinine gradient ja lainejate ringidega */
 .welcome {
   text-align: center;
   padding: 2rem 1.5rem;
   background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
-  animation: ICE 18s ease infinite;
+  animation: ICE 18s ease infinite; /* Värvianimatsioon */
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 10rem;
@@ -181,6 +188,7 @@ header {
   opacity: 0.6;
 }
 
+/* Animatsioon: värvi muutus gradiendiga - "jäämeri" efekt */
 @keyframes ICE {
   0% {
     background-position: 0% 50%;
@@ -193,6 +201,7 @@ header {
   }
 }
 
+/* Animatsioon: ringid pöörlevad ja liiguvad - "lainete" efekt */
 @keyframes wave {
   from {
     transform: rotate(0deg) translate(0, 0);
@@ -296,11 +305,12 @@ img {
   color: #34373a;
 }
 
+/* Teemade grid - 5 veeruga kuvapaigutus õppeteemade kartidele */
 .box {
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  grid-template-columns: repeat(5, minmax(180px, 1fr)); /* 5 võrdsed veerud */
   gap: 40px;
   background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
@@ -336,6 +346,7 @@ img {
   opacity: 0.4;
 }
 
+/* Õppeteema kaart - suureneb hiire üle */
 .topic {
   padding: 1rem;
   background-color: #ffffff;
@@ -347,7 +358,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.3s ease; /* Sujuv ülemineku efekt */
   cursor: pointer;
 }
 
