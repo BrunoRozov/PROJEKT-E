@@ -1,86 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kontakt.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kontakt.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- Kontakt</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
-
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <header>
-
-        <nav class="navbar">
-            <a href="index.html"><img src="img/logo.png" alt=""> </a>
-            <h2>Devik</h2>
-            <div class="nav-links">
-                <a class="nav-link"  href="index.html">Õppe materjalid</a>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Otsi...">
-                <button>Otsi</button>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+        <h2>Devik</h2>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">Õppe materjalid</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Otsi..." list="topic-list" />
+          <datalist id="topic-list">
+            <option value="Matemaatika"></option>
+            <option value="JavaScript"></option>
+            <option value="Python"></option>
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="SASS"></option>
+            <option value="Bootstrap"></option>
+            <option value="Koduleht"></option>
+          </datalist>
+          <button>Otsi</button>
+        </div>
+      </nav>
     </header>
     <main>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section> 
+      <section>
+        <div class="container">
+          <h1>Võta <span class="text-primary">Ühendust</span> Meiega</h1>
+          <p>Palun täida all olev vorm</p>
+          <form action="">
+            <div class="form-group">
+              <label for="name">Nimi</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Sõnum</label>
+              <textarea id="message"></textarea>
+            </div>
+            <button type="submit" class="btn">Saada</button>
+          </form>
+        </div>
+      </section>
 
-            <section>
-                <div class="container">
-                    <h1>Võta <span class="text-primary">Ühendust</span> Meiega</h1>
-                    <p>Palun täida all olev vorm</p>
-                    <form action="">
-                        <div class="form-group">
-                            <label for="name">Nimi</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Sõnum</label>
-                            <textarea id="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Saada</button>
-                    </form>
-                </div>
-            </section>
+      <section>
+        <div id="thankModal" class="modal">
+          <div class="modal-content thank-content">
+            <span class="close" id="closeThank">&times;</span>
 
+            <h2>Aitäh!</h2>
+            <img src="/img/Yaris.gif" alt="" />
+            <p>Sinu tagasiside on vastu võetud.</p>
 
-            <section>
-                <div id="thankModal" class="modal">
-
-                    <div class="modal-content thank-content">
-
-                        <span class="close" id="closeThank">&times;</span>
-
-                        <h2>Aitäh!</h2>
-                        <img src="/img/Yaris.gif" alt="">
-                        <p>Sinu tagasiside on vastu võetud.</p>
-
-                        <div class="saada">
-                            <button id="closeThankBtn">Sulge</button>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
+            <div class="saada">
+              <button id="closeThankBtn">Sulge</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-            <footer>
-                <div class="footer">
-                    <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-                </div>
-            </footer>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
+    </footer>
 
-            <script src="modal.js"></script>
-
-</body>
+    <script src="modal.js"></script>
+  </body>
+  <script src="smooth.js"></script>
+</html>

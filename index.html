@@ -1,97 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
-    
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <img src="img/logo.png" alt="">
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a id="learnA" class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="#learning-topics">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            
-            <button>Otsi</button>
-        </div>
+      <img src="img/logo.png" alt="" />
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a id="learnA" class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="#learning-topics">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="JavaScript"></option>
+          <option value="Python"></option>
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="SASS"></option>
+          <option value="Bootstrap"></option>
+          <option value="Kontakt"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <div class="welcome">
+          <h1>Tere tulemast Devik veebilehele!</h1>
+          <h2>Õppimiseks ja teadmiste laiendamiseks valmis?</h2>
+          <button id="learnBtn">Alusta õppimist</button>
+        </div>
+      </section>
 
-        <section>
-            <div class="welcome">
-                <h1>Tere tulemast Devik veebilehele!</h1>
-                <h2>Õppimiseks ja teadmiste laiendamiseks valmis?</h2>
-                <button id="learnBtn">Alusta õppimist</button>
-            </div>
-        </section>
+      <section>
+        <h1>Mis veebileht see on?</h1>
+        <div class="content">
+          <img src="img/alt.gif" alt="Sisu" />
+          <div class="content1">
+            <p>
+              See on veebileht, kus saad õppida erinevaid teemasid erinevate
+              ainete kohta. Kas matemaatika, programmeerimine ja veel
+            </p>
+            <p>
+              Meie veebilehel on pakkuda õppida: "matemaatika, javascript,
+              Python, HTML, CSS, SASS ja Bootstrap"
+            </p>
+            <p>
+              See veebileht on tehtud selleks, et aidata õppijatel õppida
+              erinevaid teemasid erinevate ainete kohta ja saada vajalik info
+              kiiremini kätte. Selleks, et alustada õppimisega, või info
+              otsimisega, kerige alla või kasutage otsinguriba.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <h1>Mis veebileht see on?</h1>
-            <div class="content">
-                <img src="img/alt.gif" alt="Sisu">
-                <div class="content1">
-                    <p>See on veebileht, kus saad õppida erinevaid teemasid erinevate ainete kohta. Kas matemaatika, programmeerimine ja veel</p>
-                    <p>Meie veebilehel on pakkuda õppida: "matemaatika, javascript, Python, HTML, CSS, SASS ja Bootstrap"</p>
-                    <p>See veebileht on tehtud selleks,
-                     et aidata õppijatel õppida erinevaid teemasid erinevate ainete kohta ja saada vajalik info kiiremini kätte. Selleks,
-                     et alustada õppimisega, või info otsimisega, kerige alla või kasutage otsinguriba.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="learning-topics">
-            <div class="õpe">
-                <h1>Meie õppimise teemad</h1>
-                <div class="box">
-                    <a class="topic" href="mata.html">
-                        <img src="img/math.webp" alt="Matemaatika">
-                        <span>Matemaatika</span>
-                    </a>
-                    <a class="topic" href="javascript.html">
-                        <img src="img/JavaScript.jpg" alt="JavaScript">
-                        <span>JavaScript</span>
-                    </a>
-                    <a class="topic" href="py.html">
-                        <img src="img/Python.png" alt="Python">
-                        <span>Python</span>
-                    </a>
-                    <a class="topic" href="html.html">
-                        <img src="img/HTML.jpg" alt="HTML">
-                        <span>HTML</span>
-                    </a>
-                    <a class="topic" href="css.html">
-                        <img src="img/CSS.png" alt="CSS">
-                        <span>CSS</span>
-                    </a>
-                    <a class="topic" href="sass.html">
-                        <img src="img/SASS.jpg" alt="SASS">
-                        <span>SASS</span>
-                    </a>
-                    <a class="topic" href="bootstrap.html">
-                        <img src="img/Bootstrap.webp" alt="Bootstrap">
-                        <span>Bootstrap</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
+      <section id="learning-topics">
+        <div class="õpe">
+          <h1>Meie õppimise teemad</h1>
+          <div class="box">
+            <a class="topic" href="mata.html">
+              <img src="img/math.webp" alt="Matemaatika" />
+              <span>Matemaatika</span>
+            </a>
+            <a class="topic" href="javascript.html">
+              <img src="img/JavaScript.jpg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </a>
+            <a class="topic" href="py.html">
+              <img src="img/Python.png" alt="Python" />
+              <span>Python</span>
+            </a>
+            <a class="topic" href="html.html">
+              <img src="img/HTML.jpg" alt="HTML" />
+              <span>HTML</span>
+            </a>
+            <a class="topic" href="css.html">
+              <img src="img/CSS.png" alt="CSS" />
+              <span>CSS</span>
+            </a>
+            <a class="topic" href="sass.html">
+              <img src="img/SASS.jpg" alt="SASS" />
+              <span>SASS</span>
+            </a>
+            <a class="topic" href="bootstrap.html">
+              <img src="img/Bootstrap.webp" alt="Bootstrap" />
+              <span>Bootstrap</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
 
     <script src="smooth.js"></script>
-</body>
+  </body>
 </html>

@@ -1,69 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- JavaScript</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><img src="img/logo.png" alt=""> </a>
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="index.html">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            <button>Otsi</button>
-        </div>
+      <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="index.html">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="Python"></option>
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="SASS"></option>
+          <option value="Bootstrap"></option>
+          <option value="Kontakt"></option>
+          <option value="Koduleht"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section>  
+      <section>
+        <div class="teema">
+          <div class="image-card">
+            <img src="img/jc.png" alt="JavaScript" />
+            <div class="image-card-text">JavaScript</div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="teema">
-                <div class="image-card">
-                    <img src="img/jc.png" alt="JavaScript">
-                    <div class="image-card-text"> JavaScript</div>
-                </div>
-            </div>
-        </section>
+      <section>
+        <h1>JavaScript if, else if, else</h1>
+        <div class="content">
+          <img src="img/else.png" alt="Sisu" />
+          <div class="content1">
+            <p>
+              Pildi järgi on antud tavaline Javascripti if, else if, else kood
+              mis näitab, milline näeb välja tavaline if, else if, else kood.
+              See on väga kasulik, kui me tahame, et meie kood annaks eraldi
+              vastuse olenevalt väärtusest.
+            </p>
 
-        <section>
-            <h1>JavaScript if, else if, else</h1>
-            <div class="content">
-                <img src="img/else.png" alt="Sisu">
-                <div class="content1">
-                    <p>Pildi järgi on antud tavaline Javascripti if, else if, else kood mis näitab, milline näeb välja
-                        tavaline if, else if, else kood. See on väga kasulik, kui me tahame, et meie kood annaks
-                        eraldi vastuse olenevalt väärtusest.
-                    <p>Kuidas see töötab? kõige pealt, me teeme väärtuse kasutades <strong>const</strong>. Siis me paneme väärtusele nime.
-                    Pildil on pandud nimeks <strong>"hour"</strong> ja see on võrdne <strong>new Date().getHours();</strong>. See tähendab,
-                    et see võtab oma väärtuse praegusest kella ajast <strong>(0-23)</strong>.</p>
-                    <p><strong>If</strong>, ehk kui <strong>"hour"</strong> on väiksem kui 12,
-                    siis kuvatakse sõnum <strong>"Good morning!"</strong>. <strong>Else if</strong>, ehk kui "hour" on suurem või võrdne 12,
-                    siis kuvatakse sõnum <strong>"Good afternoon!"</strong>. <strong>Else</strong>, ehk kui <strong>"hour"</strong> on suurem või võrdne 18,
-                    siis kuvatakse sõnum <strong>"Good evening!"</strong>. Else if saab lisada nii palju juurde, kui soovib.</p>
-                  </div>
-              </div>
-          </section>
-      </header>
+            <p>
+              Kuidas see töötab? kõige pealt, me teeme väärtuse kasutades
+              <strong>const</strong>. Siis me paneme väärtusele nime. Pildil on
+              pandud nimeks <strong>"hour"</strong> ja see on võrdne
+              <strong>new Date().getHours();</strong>. See tähendab, et see
+              võtab oma väärtuse praegusest kella ajast <strong>(0-23)</strong>.
+            </p>
+            <p>
+              <strong>If</strong>, ehk kui <strong>"hour"</strong> on väiksem
+              kui 12, siis kuvatakse sõnum <strong>"Good morning!"</strong>.
+              <strong>Else if</strong>, ehk kui "hour" on suurem või võrdne 12,
+              siis kuvatakse sõnum <strong>"Good afternoon!"</strong>.
+              <strong>Else</strong>, ehk kui <strong>"hour"</strong> on suurem
+              või võrdne 18, siis kuvatakse sõnum
+              <strong>"Good evening!"</strong>. Else if saab lisada nii palju
+              juurde, kui soovib.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
-
-</body>
-</html>  
+  </body>
+  <script src="smooth.js"></script>
+</html>

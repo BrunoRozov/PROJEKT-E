@@ -1,70 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- Python</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><img src="img/logo.png" alt=""> </a>
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="index.html">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            <button>Otsi</button>
-        </div>
+      <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="index.html">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="JavaScript"></option>
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="SASS"></option>
+          <option value="Bootstrap"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section>  
+      <section>
+        <div class="teema">
+          <div class="image-card">
+            <img src="img/py.webp" alt="Python" />
+            <div class="image-card-text">Python</div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="teema">
-                <div class="image-card">
-                    <img src="img/py.webp" alt="Python">
-                    <div class="image-card-text"> Python</div>
-                </div>
-            </div>
-        </section>
+      <section>
+        <h1>Python if, elif, else</h1>
+        <div class="content">
+          <img src="img/elif.png" alt="Sisu" />
+          <div class="content1">
+            <p>
+              Pildi järgi on antud tavaline
+              <a href="https://www.python.org/" target="_blank">Python</a> if,
+              elif, else kood mis näitab, milline näeb välja tavaline if, elif,
+              else kood. See on väga kasulik, kui me tahame, et meie kood annaks
+              eraldi vastuse olenevalt väärtusest.
+            </p>
 
-        <section>
-            <h1>Python if, elif, else</h1>
-            <div class="content">
-                <img src="img/elif.png" alt="Sisu">
-                <div class="content1">
-                    <p>Pildi järgi on antud tavaline <a href="https://www.python.org/" target="_blank">Python</a> if, elif, else kood mis näitab, milline näeb välja
-                        tavaline if, elif, else kood. See on väga kasulik, kui me tahame, et meie kood annaks
-                        eraldi vastuse olenevalt väärtusest.
-                    <p>Kuidas see töötab? kõige pealt, me teeme väärtuse. Siin on antud väärtuseks <strong>"score"</strong>
-                    ja see on võrdne <strong>int(input("Enter your score: "))</strong>. See teeb terminali teksti
-                    <strong>"Enter your score: "</strong> jaselle sisse saab kirjutada. Selelks et see kood töötaks, tuleb kirjutada
-                    numbriga arv.</p>
-                    <p>All pool "score" on meil <strong>if, elif, else</strong>. Need annavad terminali tulemuse, olenevalt
-                    mis me panime enda tulemuseks. Nt kui me panime enda tulemuseks <strong>82</strong>, siis printitakse meile terminali lause
-                    <strong>"Your score is: B"</strong>. Kuna 82 on suurem kui 80 ja see annab meile B. Kui me paneks alla 70 score,
-                    siis tulemus oleks <strong>"Your score is: F"</strong>.</p>
-                  </div>
-              </div>
-          </section>
-      </header>
+            <p>
+              Kuidas see töötab? kõige pealt, me teeme väärtuse. Siin on antud
+              väärtuseks <strong>"score"</strong> ja see on võrdne
+              <strong>int(input("Enter your score: "))</strong>. See teeb
+              terminali teksti <strong>"Enter your score: "</strong> jaselle
+              sisse saab kirjutada. Selelks et see kood töötaks, tuleb kirjutada
+              numbriga arv.
+            </p>
+            <p>
+              All pool "score" on meil <strong>if, elif, else</strong>. Need
+              annavad terminali tulemuse, olenevalt mis me panime enda
+              tulemuseks. Nt kui me panime enda tulemuseks <strong>82</strong>,
+              siis printitakse meile terminali lause
+              <strong>"Your score is: B"</strong>. Kuna 82 on suurem kui 80 ja
+              see annab meile B. Kui me paneks alla 70 score, siis tulemus oleks
+              <strong>"Your score is: F"</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
-
-</body>
-</html>  
+  </body>
+  <script src="smooth.js"></script>
+</html>

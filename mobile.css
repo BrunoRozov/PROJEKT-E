@@ -1,15 +1,14 @@
 @media (max-width: 768px) {
-
   body {
     overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
+  }
 
-    }
-
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -30,7 +29,7 @@
   /* RINGID */
   .navbar::before,
   .navbar::after {
-    content: '';
+    content: "";
 
     position: absolute;
 
@@ -56,13 +55,13 @@
   }
 
   .navbar::after {
-    width: 220px;
-    height: 220px;
+    width: 100px;
+    height: 100px;
 
     border: 6px solid rgba(255, 255, 255, 0.08);
 
     animation-duration: 32s;
-    animation-direction: reverse;
+    animation-direction: center;
 
     opacity: 0.25;
   }
@@ -115,7 +114,7 @@
   }
 
   /* WELCOME */
- 
+
   .welcome h1 {
     font-size: 2rem;
   }
@@ -137,7 +136,7 @@
   /* RINGID */
   .welcome::before,
   .welcome::after {
-    content: '';
+    content: "";
 
     position: absolute;
 
@@ -173,9 +172,9 @@
 
     opacity: 0.25;
   }
-/* AAAAAAAAAAAAAAAA */
-  
-.box {
+  /* AAAAAAAAAAAAAAAA */
+
+  .box {
     position: relative;
     overflow: hidden;
     padding: 2rem 1rem;
@@ -184,7 +183,7 @@
   /* RINGID */
   .box::before,
   .box::after {
-    content: '';
+    content: "";
 
     position: absolute;
 
@@ -296,8 +295,8 @@
     font-size: 0.85rem;
   }
 
- .image-card-text {
-   position: absolute;
+  .image-card-text {
+    position: absolute;
 
     bottom: 0;
     left: 0;
@@ -311,18 +310,15 @@
     font-weight: bold;
     text-align: center;
     box-sizing: border-box;
-    background: linear-gradient(
-      to top,
-      rgba(0,0,0,0.75),
-      rgba(0,0,0,0)
-    );
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
 
   .form-group input,
-  .form-group textarea{
+  .form-group textarea {
     width: 70%;
     margin-right: 0;
     box-sizing: border-box;
   }
-
 }
+
+/* Video */

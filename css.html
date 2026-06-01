@@ -1,64 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- CSS</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><img src="img/logo.png" alt=""> </a>
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="index.html">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            <button>Otsi</button>
-        </div>
+      <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="index.html">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="JavaScript"></option>
+          <option value="Python"></option>
+          <option value="HTML"></option>
+          <option value="SASS"></option>
+          <option value="Bootstrap"></option>
+          <option value="Kontakt"></option>
+          <option value="Koduleht"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section>  
+      <section>
+        <div class="teema">
+          <div class="image-card">
+            <img src="img/CSS.png" alt="CSS" />
+            <div class="image-card-text">CSS</div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="teema">
-                <div class="image-card">
-                    <img src="img/CSS.png" alt="CSS">
-                    <div class="image-card-text">CSS</div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h1>Mis on CSS?</h1>
-            <div class="content">
-                <img src="img/cs.webp" alt="Sisu">
-                <div class="content1">
-                    <p><strong>CSS</strong> ehk <strong>Cascading Style Sheets</strong> on veebi disainimise keel,
-                        millega saab veebilehte dekoreerida ja muuta veebilehe stiili.</p>
-                    <p><strong>CSS</strong> ja <strong>HTML</strong> on nagu näpud ja klaviatuur. Ilma näputeta ei saa klaviatuuril
-                    kirjutada ja ilma klaviatuurita ei saa arvutis kirjutada. Üks ei tööta kui teine ei ole olemas.</p>
-                    <p>Kui <strong>HTML</strong> on veebilehe struktuur, siis <strong>CSS</strong> on selle stiil ja paigutus.</p>
-                  </div>
-              </div>
-          </section>
-      </header>
+      <section>
+        <h1>Mis on CSS?</h1>
+        <div class="content">
+          <img src="img/cs.webp" alt="Sisu" />
+          <div class="content1">
+            <p>
+              <strong>CSS</strong> ehk
+              <strong>Cascading Style Sheets</strong> on veebi disainimise keel,
+              millega saab veebilehte dekoreerida ja muuta veebilehe stiili.
+            </p>
+            <p>
+              <strong>CSS</strong> ja <strong>HTML</strong> on nagu näpud ja
+              klaviatuur. Ilma näputeta ei saa klaviatuuril kirjutada ja ilma
+              klaviatuurita ei saa arvutis kirjutada. Üks ei tööta kui teine ei
+              ole olemas.
+            </p>
+            <p>
+              Kui <strong>HTML</strong> on veebilehe struktuur, siis
+              <strong>CSS</strong> on selle stiil ja paigutus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
-
-</body>
-</html>  
+  </body>
+  <script src="smooth.js"></script>
+</html>

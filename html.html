@@ -1,65 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- HTML</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><img src="img/logo.png" alt=""> </a>
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="index.html">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            <button>Otsi</button>
-        </div>
+      <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="index.html">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="JavaScript"></option>
+          <option value="Python"></option>
+          <option value="CSS"></option>
+          <option value="SASS"></option>
+          <option value="Bootstrap"></option>
+          <option value="Kontakt"></option>
+          <option value="Koduleht"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section>  
+      <section>
+        <div class="teema">
+          <div class="image-card">
+            <img src="img/HTML.jpg" alt="HTML" />
+            <div class="image-card-text">HTML</div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="teema">
-                <div class="image-card">
-                    <img src="img/HTML.jpg" alt="HTML">
-                    <div class="image-card-text">HTML</div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h1>Mis on HTML?</h1>
-            <div class="content">
-                <img src="img/ht.jpg" alt="Sisu">
-                <div class="content1">
-                    <p><strong>HTML</strong> ehk <strong>(Hypertext Markup Language)</strong> on veebilehtede loomiseks kasutatav märgistuskeel.
-                        See määrab veebilehe struktuuri ja sisu.</p>
-                    <p>HTML keelt võib võtta nagu maja blue print. sellega lisatakse kõik vajalikud elemendid veebilehele.
-                        Nt: pealkirjad, lõigud, pildid, lingid ja palju muud. Aga HTML ei lasu sul dekoreerida veebilehte.
-                        Selle jaoks kasutatakse <strong>CSS-i</strong> ja <strong>JavaScripti</strong>.</p>
-                    <p>HTML on üks kõige kuulsamaid veebilehtede loomiseks kasutatavaid keeli ja seda on lihtne õppida.</p>
-                  </div>
-              </div>
-          </section>
-      </header>
+      <section>
+        <h1>Mis on HTML?</h1>
+        <div class="content">
+          <iframe
+            width="45%"
+            height="315"
+            src="https://www.youtube.com/embed/ok-plXXHlWw?si=q4n6tOOYfFbMQtEI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="content1">
+            <p>
+              <strong>HTML</strong> ehk
+              <strong>(Hypertext Markup Language)</strong> on veebilehtede
+              loomiseks kasutatav märgistuskeel. See määrab veebilehe struktuuri
+              ja sisu.
+            </p>
+            <p>
+              HTML keelt võib võtta nagu maja blue print. sellega lisatakse kõik
+              vajalikud elemendid veebilehele. Nt: pealkirjad, lõigud, pildid,
+              lingid ja palju muud. Aga HTML ei lasu sul dekoreerida veebilehte.
+              Selle jaoks kasutatakse <strong>CSS-i</strong> ja
+              <strong>JavaScripti</strong>.
+            </p>
+            <p>
+              HTML on üks kõige kuulsamaid veebilehtede loomiseks kasutatavaid
+              keeli ja seda on lihtne õppida.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
-
-</body>
-</html>  
+  </body>
+  <script src="smooth.js"></script>
+</html>

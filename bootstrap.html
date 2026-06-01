@@ -1,65 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Devik- Bootstrap</title>
-    <link rel="icon" type="#" href="/img/image.png">
-</head>
-<body>
+    <link rel="icon" type="#" href="/img/image.png" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><img src="img/logo.png" alt=""> </a>
-        <h2>Devik</h2>
-        <div class="nav-links">
-            <a class="nav-link" href="kontakt.html">Kontakt</a>
-            <a class="nav-link" href="index.html">Õppe materjalid</a>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Otsi...">
-            <button>Otsi</button>
-        </div>
+      <a href="index.html"><img src="img/logo.png" alt="" /> </a>
+      <h2>Devik</h2>
+      <div class="nav-links">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+        <a class="nav-link" href="index.html">Õppe materjalid</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Otsi..." list="topic-list" />
+        <datalist id="topic-list">
+          <option value="Matemaatika"></option>
+          <option value="JavaScript"></option>
+          <option value="Python"></option>
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="SASS"></option>
+          <option value="Kontakt"></option>
+          <option value="Koduleht"></option>
+        </datalist>
+        <button>Otsi</button>
+      </div>
     </nav>
 
     <header>
+      <section>
+        <a class="back" href="index.html">
+          <button>← Tagasi</button>
+        </a>
+      </section>
 
-        <section>
-            <a class="back" href="index.html">
-                <button >← Tagasi</button>
-            </a>
-        </section>  
+      <section>
+        <div class="teema">
+          <div class="image-card">
+            <img src="img/Bootstrap.webp" alt="Bootstrap" />
+            <div class="image-card-text">Bootstrap</div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="teema">
-                <div class="image-card">
-                    <img src="img/Bootstrap.webp" alt="Bootstrap">
-                    <div class="image-card-text">Bootstrap</div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h1>Mis on Bootstrap?</h1>
-            <div class="content">
-                <img src="img/bo.jpg" alt="Sisu">
-                <div class="content1">
-                    <p><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> on populaarne <strong>HTML</strong>-i veebiarenduse raamistik,
-                     mis aitab kiiremini luua veebilehti.</p>
-                    <p><strong>Bootstrap</strong>-i kasutuseks ei ole vaja <strong>CSS</strong>-i kirjutamist, kuna Bootstrapil on see
-                    juba sisse kirjutatud.</p>
-                    <p>Bootstrapil on aga omi miinus, kuna Bootstrap on väga tundlik, mis tähendab, et üks viga koodis võib
-                     kogu veebilehe rikkuda, ja kuna Bootstrapil on palju omadusi, siis võib see olla algajatele keeruline.</p>
-                  </div>
-              </div>
-          </section>
-      </header>
+      <section>
+        <h1>Mis on Bootstrap?</h1>
+        <div class="content">
+          <img src="img/bo.jpg" alt="Sisu" />
+          <div class="content1">
+            <p>
+              <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+              on populaarne <strong>HTML</strong>-i veebiarenduse raamistik, mis
+              aitab kiiremini luua veebilehti.
+            </p>
+            <p>
+              <strong>Bootstrap</strong>-i kasutuseks ei ole vaja
+              <strong>CSS</strong>-i kirjutamist, kuna Bootstrapil on see juba
+              sisse kirjutatud.
+            </p>
+            <p>
+              Bootstrapil on aga omi miinus, kuna Bootstrap on väga tundlik, mis
+              tähendab, et üks viga koodis võib kogu veebilehe rikkuda, ja kuna
+              Bootstrapil on palju omadusi, siis võib see olla algajatele
+              keeruline.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <footer>
-        <div class="footer">
-            <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
-        </div>
+      <div class="footer">
+        <p>&copy; 2026 Veebilehe nimi. Kõik õigused on varastatud.</p>
+      </div>
     </footer>
-
-</body>
+  </body>
+  <script src="smooth.js"></script>
 </html>

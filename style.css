@@ -1,5 +1,7 @@
 /* Global styles for the project */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -8,33 +10,34 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(135deg, #78acff, #377EFA);
-    background-size: 400% 400%;
-    animation: ICE 18s ease infinite;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    height: 100px;
-    box-sizing: border-box;
-    z-index: 1;
+  background: linear-gradient(135deg, #78acff, #377efa);
+  background-size: 400% 400%;
+  animation: ICE 18s ease infinite;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar img {
-    height: 150px;
-    width: auto;
-    flex-shrink: 0;
-    margin-top: 15px;
-    padding: 0;
+  height: 150px;
+  width: auto;
+  flex-shrink: 0;
+  margin-top: 15px;
+  padding: 0;
 
-    animation: floatLogo 3s ease-in-out infinite;
-    position: relative;
-    z-index: 2;
+  animation: floatLogo 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbar img:hover {
@@ -43,28 +46,31 @@ body {
 
 .navbar button:active {
   transform: scale(0.97);
-    transition: transform 0.1s ease;
+  transition: transform 0.1s ease;
 }
 
 .navbar::before,
 .navbar::after {
   z-index: 0;
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
 }
 
 .navbar::after {
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
-    border-color: rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .navbar-brand {
@@ -91,9 +97,9 @@ body {
 
 .nav-link:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
-    border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
+  border-radius: 16px;
 }
 
 .nav-link:active {
@@ -127,8 +133,8 @@ body {
 
 .search button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
 .search button:active {
@@ -148,7 +154,7 @@ header {
 .welcome {
   text-align: center;
   padding: 2rem 1.5rem;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
   animation: ICE 18s ease infinite;
   border-radius: 16px;
@@ -157,37 +163,43 @@ header {
   margin-top: 5rem;
   color: rgb(245, 235, 235);
   border: 1px solid #34373a;
+  position: relative;
 }
 
-.welcome::before,
-.welcome::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
-}
-
-.welcome::after {
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
-    border-color: rgba(255, 255, 255, 0.08);
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
 }
 
 @keyframes ICE {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes wave {
-    from { transform: rotate(0deg) translate(0, 0); }
-    to   { transform: rotate(360deg) translate(30px, 40px); }
+  from {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate(30px, 40px);
+  }
 }
 
 .welcome button {
@@ -203,12 +215,10 @@ header {
   box-shadow: 0 8px 20px rgba(0, 102, 255, 0.3);
 }
 
-
-
 .welcome button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
 .welcome button:active {
@@ -229,34 +239,34 @@ img {
   border: 1px solid #34373a;
   border-radius: 8px;
   padding: 20px;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
-  animation: ICE 18s ease infinite
+  animation: ICE 18s ease infinite;
 }
 
 .content::before,
 .content::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .content::after {
-    width: 260px;
-    height: 260px;
-    border: 10px solid rgba(255, 255, 255, 0.08);
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
+  width: 260px;
+  height: 260px;
+  border: 10px solid rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
 }
 
 .content1 {
@@ -277,7 +287,6 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-
 .õpe h1 {
   margin-top: 10rem;
 }
@@ -293,7 +302,7 @@ img {
   display: grid;
   grid-template-columns: repeat(5, minmax(180px, 1fr));
   gap: 40px;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
   animation: ICE 18s ease infinite;
   padding: 30px;
@@ -304,27 +313,27 @@ img {
 
 .box::before,
 .box::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 30s linear infinite;
-    opacity: 0.6;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 30s linear infinite;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box::after {
-    width: 260px;
-    height: 260px;
-    border: 10px solid rgba(255, 255, 255, 0.08);
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
+  width: 260px;
+  height: 260px;
+  border: 10px solid rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
 }
 
 .topic {
@@ -358,10 +367,9 @@ img {
   padding: 0;
 }
 
-
 .footer {
   padding: 2rem 2rem;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
   animation: ICE 18s ease infinite;
   border-top: 1px solid #4a4d53;
@@ -370,27 +378,27 @@ img {
 
 .footer::before,
 .footer::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 30s linear infinite;
-    opacity: 0.6;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 30s linear infinite;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer::after {
-    width: 260px;
-    height: 260px;
-    border: 10px solid rgba(255, 255, 255, 0.08);
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
+  width: 260px;
+  height: 260px;
+  border: 10px solid rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
 }
 
 .footer p {
@@ -399,15 +407,12 @@ img {
   color: white;
 }
 
-
-
 /*sec*/
-
 
 .teema {
   text-align: center;
   padding: 2rem 1.5rem;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
   animation: ICE 18s ease infinite;
   border-radius: 16px;
@@ -418,27 +423,26 @@ img {
   border: 1px solid #34373a;
 }
 
-.teema::before,
-.teema::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
+.teema::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
 }
 
 .teema::after {
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
-    border-color: rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
- img {
+img {
   max-width: 800px;
   max-height: 400px;
   width: auto;
@@ -447,7 +451,7 @@ img {
   padding: 40px;
 }
 
- .welcome img {
+.welcome img {
   max-width: 800px;
   max-height: 400px;
   width: auto;
@@ -507,6 +511,13 @@ img {
 
 .back button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
+}
+
+/* video */
+
+.content {
+  display: flex;
+  gap: 30px; /* vahe video ja teksti vahel */
 }
