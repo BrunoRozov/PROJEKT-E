@@ -520,4 +520,5 @@ img {
 .content {
   display: flex;
   gap: 30px; /* vahe video ja teksti vahel */
+  padding: 60px;
 }
