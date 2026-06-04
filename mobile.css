@@ -245,34 +245,9 @@
   }
 
   /* CONTENT */
-  .content {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .content img {
-    max-width: 100%;
-    padding: 1rem 0;
-  }
-
-  .content1 {
-    width: 100%;
-  }
-
-  /* ÕPE */
-  .õpe h1 {
-    margin-top: 5rem;
-    text-align: center;
-  }
 
   /* BOX GRID */
-  .box {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 20px;
-    justify-items: center;
-  }
+
 
   .topic {
     width: 100%;
@@ -321,4 +296,46 @@
   }
 }
 
-/* Video */
+/* Tablet */
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .content img {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .content1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .õpe h1 {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  /* BOX GRID */
+  .box {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .topic {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .topic img {
+    width: 100%;
+    height: auto;
+  }
+}
