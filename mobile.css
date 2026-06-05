@@ -294,6 +294,27 @@
     margin-right: 0;
     box-sizing: border-box;
   }
+
+  /* Video vaatamine mobiili versioonis */
+  .content {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .content iframe,
+  .content video,
+  .content embed,
+  .content object {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .content1 {
+    width: 100%;
+  }
 }
 
 /* Tablet */
