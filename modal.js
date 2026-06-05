@@ -17,6 +17,20 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 
+/* Vormi esitamise sündmus - kuvatakse tänumodal */
+form.addEventListener("submit", function (event) {
+  /* Keelame vaikevormi esitamise */
+  event.preventDefault();
+
+  /* Näitame tänumodali */
+  modal.classList.add("show");
+
+  /* Tühjendame vormi väljad */
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
+});
+
 /* Modali sulgemise funktsioon */
 function closeModal() {
   modal.classList.remove("show");
