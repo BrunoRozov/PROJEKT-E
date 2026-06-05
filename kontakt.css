@@ -1,7 +1,14 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .back {
@@ -162,6 +169,7 @@ body {
 main {
   text-align: start;
   padding: 90px 50px;
+  flex: 1 0 auto;
 }
 
 .container{
