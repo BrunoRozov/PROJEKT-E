@@ -211,6 +211,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+    animation: fadeIn 0.75s ease-in-out;
 }
 
 .form-group input,
@@ -220,6 +221,7 @@ main {
     margin-top: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    animation: fadeIn 0.75s ease-in-out;
 }
 
 .container, button{
@@ -376,4 +378,16 @@ main {
   margin: 0;
   font-size: 0.95rem;
   color: white;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

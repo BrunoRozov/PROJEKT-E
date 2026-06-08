@@ -472,6 +472,7 @@ img {
   height: auto;
   border-radius: 10px;
   padding: 40px;
+  animation: fadeIn 0.75s ease-in-out;
 }
 
 .welcome img {
@@ -511,6 +512,7 @@ img {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  animation: fadeIn 0.75s ease-in-out;
 }
 
 .back {
@@ -544,4 +546,17 @@ img {
   display: flex;
   gap: 30px; /* vahe video ja teksti vahel */
   padding: 60px;
+}
+
+/* teema ilmumine */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
