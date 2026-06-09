@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -33,39 +34,38 @@ body {
 
 .back button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
-
 .navbar {
-    background: linear-gradient(135deg, #78acff, #377EFA);
-    background-size: 400% 400%;
-    animation: ICE 18s ease infinite;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    height: 100px;
-    box-sizing: border-box;
-    z-index: 1;
+  background: linear-gradient(135deg, #78acff, #377efa);
+  background-size: 400% 400%;
+  animation: ICE 18s ease infinite;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .navbar img {
-    height: 150px;
-    width: auto;
-    flex-shrink: 0;
-    margin-top: 15px;
-    padding: 0;
+  height: 150px;
+  width: auto;
+  flex-shrink: 0;
+  margin-top: 15px;
+  padding: 0;
 
-    animation: floatLogo 3s ease-in-out infinite;
-    position: relative;
-    z-index: 2;
+  animation: floatLogo 3s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbar img:hover {
@@ -74,28 +74,28 @@ body {
 
 .navbar button:active {
   transform: scale(0.97);
-    transition: transform 0.1s ease;
+  transition: transform 0.1s ease;
 }
 
 .navbar::before,
 .navbar::after {
   z-index: 0;
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
 }
 
 .navbar::after {
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
-    border-color: rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .navbar-brand {
@@ -122,9 +122,9 @@ body {
 
 .nav-link:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
-    border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
+  border-radius: 16px;
 }
 
 .nav-link:active {
@@ -158,8 +158,8 @@ body {
 
 .search button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
 .search button:active {
@@ -172,10 +172,10 @@ main {
   flex: 1 0 auto;
 }
 
-.container{
+.container {
   text-align: center;
   padding: 2rem 1.5rem;
-  background: linear-gradient(135deg, #78acff, #377EFA);
+  background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
   animation: ICE 18s ease infinite;
   border-radius: 16px;
@@ -188,43 +188,44 @@ main {
 
 .container::before,
 .container::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: transparent;
-    border: 16px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50%;
-    animation: wave 25s linear infinite;
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 16px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  animation: wave 25s linear infinite;
+  opacity: 0.6;
 }
 
 .container::after {
-    animation-duration: 32s;
-    animation-direction: reverse;
-    opacity: 0.4;
-    border-color: rgba(255, 255, 255, 0.08);
+  animation-duration: 32s;
+  animation-direction: reverse;
+  opacity: 0.4;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
-.form-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    animation: fadeIn 0.75s ease-in-out;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  animation: fadeIn 0.75s ease-in-out;
 }
 
 .form-group input,
-.form-group textarea{
-    width: 300px;
-    padding: 10px;
-    margin-top: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    animation: fadeIn 0.75s ease-in-out;
+.form-group textarea {
+  width: 300px;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  animation: fadeIn 0.75s ease-in-out;
 }
 
-.container, button{
+.container,
+button {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0.75rem 1.5rem;
@@ -241,8 +242,8 @@ main {
 
 .container button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
 .container button:active {
@@ -250,68 +251,79 @@ main {
 }
 
 @keyframes ICE {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes wave {
-    from { transform: rotate(0deg) translate(0, 0); }
-    to   { transform: rotate(360deg) translate(30px, 40px); }
+  from {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate(30px, 40px);
+  }
 }
 
 .modal {
-    position: fixed;
-    left: 0;
-    top: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .modal.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-
 .modal-content {
-    background: white;
-    padding: 3rem;
-    border-radius: 12px;
-    text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
 
-    transform: scale(0.8);
-    opacity: 0;
+  transform: scale(0.8);
+  opacity: 0;
 
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .modal.show .modal-content {
-    transform: scale(1);
-    opacity: 1;
+  transform: scale(1);
+  opacity: 1;
 }
 
 .close {
-    position: absolute;
+  position: absolute;
 
-    right: 15px;
-    top: 10px;
+  right: 15px;
+  top: 10px;
 
-    font-size: 28px;
+  font-size: 28px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .saada button {
@@ -329,8 +341,8 @@ main {
 
 .saada button:hover {
   transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
-    background: linear-gradient(135deg, #0052cc, #0088ff);
+  box-shadow: 0 12px 25px rgba(0, 102, 255, 0.4);
+  background: linear-gradient(135deg, #0052cc, #0088ff);
 }
 
 .saada button:active {
@@ -338,40 +350,40 @@ main {
 }
 
 .footer {
-    position: relative;
-    padding: 2rem 2rem;
-    text-align: center;
+  position: relative;
+  padding: 2rem 2rem;
+  text-align: center;
 
-    background: linear-gradient(135deg, #78acff, #377EFA);
-    background-size: 400% 400%;
-    animation: ICE 18s ease infinite;
+  background: linear-gradient(135deg, #78acff, #377efa);
+  background-size: 400% 400%;
+  animation: ICE 18s ease infinite;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* RINGID */
 .footer::before,
 .footer::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    border-radius: 50%;
-    border: 16px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  border: 16px solid rgba(255, 255, 255, 0.12);
 
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 
-    animation: wave 30s linear infinite;
+  animation: wave 30s linear infinite;
 }
 
 .footer::after {
-    width: 260px;
-    height: 260px;
-    border: 10px solid rgba(255,255,255,0.08);
-    animation-direction: reverse;
+  width: 260px;
+  height: 260px;
+  border: 10px solid rgba(255, 255, 255, 0.08);
+  animation-direction: reverse;
 }
 
 .footer p {
@@ -379,7 +391,6 @@ main {
   font-size: 0.95rem;
   color: white;
 }
-
 
 @keyframes fadeIn {
   from {
