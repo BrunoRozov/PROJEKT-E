@@ -69,6 +69,7 @@
   .navbar img {
     height: 100px;
     margin-top: 0;
+    transform: scale(2);
   }
 
   .navbar-brand {
@@ -247,7 +248,6 @@
   /* CONTENT */
 
   /* BOX GRID */
-
 
   .topic {
     width: 100%;
