@@ -176,6 +176,7 @@ header {
   position: relative;
 }
 
+
 .welcome::before {
   content: "";
   position: absolute;
@@ -300,6 +301,21 @@ img {
   padding: 1rem 1.2rem;
   margin: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.75s ease-in-out;
+}
+
+.aos-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.aos-item.aos-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .õpe h1 {
@@ -387,6 +403,8 @@ img {
 }
 
 .footer {
+  position: relative;
+  overflow: hidden;
   padding: 2rem 2rem;
   background: linear-gradient(135deg, #78acff, #377efa);
   background-size: 400% 400%;
@@ -472,7 +490,7 @@ img {
   height: auto;
   border-radius: 10px;
   padding: 40px;
-  animation: fadeIn 0.75s ease-in-out;
+  animation: fadeIn 0.75s ease-in-out forwards;
 }
 
 .welcome img {
@@ -553,10 +571,10 @@ img {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    scale: 0.5;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    scale: 1;
   }
 }
